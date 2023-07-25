@@ -1,5 +1,5 @@
 # Email Verification and Account Creation API
-Email Verification and Account Creation API
+Email Verification and Account Creation API (qwmail backend)
 
 Don’t forget to ⭐️
 
