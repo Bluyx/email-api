@@ -5,7 +5,7 @@ import imaplib, email, re, os, pythoncom, win32com.client
 
 app = Flask(__name__)
 
-hMailPassword = "1234" # Password used when oppening hMailServer for the first time
+hMailPassword = "1234" # Password used when opening hMailServer for the first time
 domain = "example.com"
 
 @app.route("/")
