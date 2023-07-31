@@ -61,6 +61,7 @@ def get_verification():
         print("Error: " + str(err))
         pass
 
+
 @app.route("/create_email", methods=["POST"])
 def create_email():
     try:
@@ -68,15 +69,15 @@ def create_email():
         hmailserver.Authenticate("Administrator", hMailPassword)
         hmailserver.Connect()
         account = hmailserver.Domains.ItemByName(domain).Accounts.Add()
-        username = request.form["username"]
-        account.Address = username
+        email = request.form["email"]
+        account.Address = email
         account.Password = request.form["password"]
         account.Active = True
         account.Save()
-        return jsonify({"success": False, "message": "Account Created", "account": username})
+        return jsonify({"success": False, "message": "Account Created", "account": email})
     except Exception as err:
         if "same name already exists" in str(err): return jsonify({"success": False, "message": "Same name already exists"})
-        else: print(str(err)); return jsonify({"success": False, "message": "Error"})
+        else: return jsonify({"success": False, "message": "Error"})
 
 
 if __name__ == "__main__":
