@@ -11,7 +11,7 @@ Don’t forget to ⭐️
 
 ## Installation
 ```bash
-git clone https://github.com/Shiiivx/qwmail-backend
+git clone https://github.com/Shiiivx/email-api
 cd qwmail-backend
 pip install -r requirements.txt
 python mail.py
