@@ -12,7 +12,7 @@ Don’t forget to ⭐️
 ## Installation
 ```bash
 git clone https://github.com/Shiiivx/email-api
-cd qwmail-backend
+cd email-api
 pip install -r requirements.txt
 python mail.py
 ```
