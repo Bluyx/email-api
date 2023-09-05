@@ -11,7 +11,7 @@ Don’t forget to ⭐️
 
 ## Installation
 ```bash
-git clone https://github.com/Shiiivx/email-api
+git clone https://github.com/Bluyx/email-api
 cd email-api
 pip install -r requirements.txt
 python mail.py
