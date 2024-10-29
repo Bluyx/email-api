@@ -1,9 +1,6 @@
 # Email Verification and Account Creation API
 Email Verification and Account Creation API (qwmail backend)
 
-Don’t forget to ⭐️
-
-
 ## Features
 - Email Account Creation: Create new email accounts using hMailServer.
 - Email Verification: Verify email content based on the sender's email address and location (body or subject).
